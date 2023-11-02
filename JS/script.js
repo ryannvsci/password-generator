@@ -1,6 +1,7 @@
 //Elements Selection
 const generatePasswordButton = document.getElementById('generate-password');
 const generatePasswordElement = document.getElementById('generated-password');
+const copyButton = document.getElementById('execCopy')
 
 //Functions
 const getLowerCaseLetter = () => {
@@ -48,9 +49,13 @@ const generatePassword = (getLowerCaseLetter, getUpperCaseLetter, getNumber, get
     
 };
 
+function execCopy() {
+    document.getElementById("pass").select();
+    document.execCommand("copy")
+}
+
 //Events
 generatePasswordButton.addEventListener("click", () => {
     generatePassword(getLowerCaseLetter, getUpperCaseLetter, getNumber, getSymbols)
     
 });
-
