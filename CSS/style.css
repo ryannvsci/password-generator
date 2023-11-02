@@ -116,7 +116,7 @@ input:focus {
 
 #register-form #generated-password p{
     color: #81d340;
-    margin-bottom: 0.5;
+    margin-bottom: 0.5rem;
 }
 
 #register-form input[type="submit"] {
